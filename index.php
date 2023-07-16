@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tampilan Menu Utama</title>
+  <title>Istana Herbal</title>
+  <link rel="icon" href="IMG/Logo1.png" type="IMG/Logo1.png">
   <style>
     body {
       background-color: #e0f4f4;
@@ -170,7 +171,7 @@ line-height: 1.5;
     }
 	
 	.button-container2 {
-      text-align: right;
+      text-align: left;
     }
 	
 	.button2 {
@@ -204,7 +205,40 @@ line-height: 1.5;
       text-align: center;
       margin-top: 20px;
     }
+	
     </style>
+	<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer {
+      background-color: #8bc34a;
+      padding: 20px;
+      color: #fff;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-item {
+      text-align: center;
+    }
+
+    .footer-item h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .footer-item p {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+	</style>
 </head>
 </head>
 <body>
@@ -212,14 +246,13 @@ line-height: 1.5;
 <nav class="w-full h-28 shadow-lg fixed z-10">
         <div class="flex justify-left h-full px-10 items-center text-xl">
 			<div class="logo-container">
-							<img src="IMG/logo1.png" alt="Logo">
+							<img src="IMG/Logo1.png" alt="Logo">
 				</div>
 			<ul class="flex space-x-5" style=" margin: 50px;">
-                <li class="font-bold"><a href="#">Home</a></li>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Produk</a></li>
-                <li><a href="#">Tentang</a></li>
-                <li><a href="#">Kontak</a></li>
+                <li class="font-bold"><a href="index.php">Beranda</a></li>
+                <li><a href="Produk.php">Produk</a></li>
+                <li><a href="tentang.php">Tentang</a></li>
+                <li><a href="Kontak.php">Kontak</a></li>
             </ul>
         </div>
     </nav>
@@ -227,8 +260,11 @@ line-height: 1.5;
 <div class="welcome-container">
 <div class="welcome-text">
 <h1>WELCOME OBAT HERBAL</h1>
-<p>Temukan solusi kesehatan yang alami dan aman dengan Obat Herbal X. Terbuat dari bahan-bahan alami pilihan yang berkualitas, Obat Herbal X membantu menjaga kesehatan tubuh secara menyeluruh.</p>
-<button class="button">Selengkapnya</button>
+<p style="text-align: justify;">Temukan solusi kesehatan yang alami dan aman dengan Obat Herbal Istana Herbal. 
+Terbuat dari bahan-bahan alami pilihan yang berkualitas, Obat Herbal Istana Herbal 
+membantu menjaga kesehatan tubuh secara menyeluruh, sehingga akan sangat membantu
+dalam pengobatan menuju sehat, karena sehat tidak akan bisa dibeli maka jaga kesehatan anda.</p>
+<button class="button"><a href="welcome.php">Selengkapnya</a></button>
 </div>
 <img src="IMG/dokter.png" alt="Gambar Welcome" class="welcome-image" style="height: auto;width: 300px;">
 </div>
@@ -253,12 +289,11 @@ line-height: 1.5;
 <div class="welcome-container">
 <img src="IMG/Rak Obat.jpg" alt="Gambar Welcome" class="welcome-image">
 <div class="welcome-text">
-<h1 style=" text-align: right">Selamat Datang di Obat Herbal X</h1>
-<p style=" margin: 10px; text-align: right">Temukan solusi kesehatan yang alami dan aman dengan Obat Herbal X. Terbuat dari bahan-bahan alami pilihan yang berkualitas, Obat Herbal X membantu menjaga kesehatan tubuh secara menyeluruh.</p>
+<h1 style=" text-align: right">PRODUK TERLENGKAP</h1>
+<p style=" margin: 10px; text-align: right">Temukan segala kebutuhan herbal Anda di Toko Herbal Kami! Kami dengan bangga 
+menghadirkan produk terlengkap untuk memenuhi kebutuhan kesehatan dan kesejahteraan Anda.</p>
  <div class="button-container2">
- <center>
-    <button class="button2" style>Selengkapnya</button>
-	</center>
+    <button class="button" style="margin-left: 430px"><a href="terlengkap.php">Selengkapnya</a></button>
   </div>
 </div>
 
@@ -266,13 +301,29 @@ line-height: 1.5;
 
 <div class="welcome-container2">
 <div class="welcome-text">
-<h1>Selamat Datang di Obat Herbal X</h1>
-<p>Temukan solusi kesehatan yang alami dan aman dengan Obat Herbal X. Terbuat dari bahan-bahan alami pilihan yang berkualitas, Obat Herbal X membantu menjaga kesehatan tubuh secara menyeluruh.</p>
-<button class="button">Selengkapnya</button>
+<h1>TOKO BERSERTIFIKAT</h1>
+<p style="text-align: justify;">Temukan solusi alami untuk kesehatan Anda di Toko Herbal Kami! Kami dengan bangga mengumumkan 
+bahwa toko herbal kami telah bersertifikat, memberikan jaminan kualitas dan keaslian produk kami.</p>
+<button class="button"><a href="sertifikat.php">Selengkapnya</a></button>
 </div>
 <img src="IMG/dokter.jpeg" alt="Gambar Welcome" class="welcome-image">
 </div>
 </div>
 </div>
+<br><br>
+<div class="footer">
+    <div class="footer-item">
+      <h3>Tentang Kami</h3>
+      <p>Informasi tentang Toko Obat Herbal Istana Herbal</p>
+    </div>
+    <div class="footer-item">
+      <h3>Produk</h3>
+      <p>Daftar produk yang tersedia di Toko Obat Herbal Istana Herbal</p>
+    </div>
+    <div class="footer-item">
+      <h3>Kontak</h3>
+      <p>Hubungi kami untuk informasi lebih lanjut</p>
+    </div>
+  </div>
 </body>
 </html>
