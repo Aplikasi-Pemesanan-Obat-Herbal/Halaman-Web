@@ -3,48 +3,30 @@
 <title>Login</title>
   <link rel="icon" href="IMG/Logo1.png" type="IMG/Logo1.png">
 </head>
-<?php
-  //include "koneksi.php";
-  if(!isset($_SESSION))
-  session_start();
- 
-  if(isset($_POST['username']) && isset($_POST['password']))
-  {
-      if(trim($_POST['username']==""))
-      $errorusername="Isikan username";
-      if(trim($_POST['password']=="" ))
-      $errorpassword="Isikan password";
-      if(trim($_POST['username']!="") && trim($_POST['password']!="" ))
-      {
-        $userpost=addslashes($_POST['username']);
-        $passpost= addslashes($_POST['password']);
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#login-form').submit(function(e) {
+                e.preventDefault();
+                
+                var username = $('#username').val();
+                var password = $('#password').val();
 
-        $exec=mysqli_query($conn, "select * from login where username='$userpost'");
-        $r=mysqli_fetch_array($exec);
-        $userfield=$r[0];
-        $passfield=$r[1];
-      
-        if(mysqli_num_rows($exec)<>0)
-        {
-          if($passfield==($passpost))
-          {
-            $_SESSION['username']=$userpost;
-            $_SESSION['nama']=$r['nama'];
-            $_SESSION['udahlogin']="Y";
-            header("location:index.php");
-          }
-          else
-          {
-            $errorall="Login gagal!";
-          }
-        }
-        else
-          $errorall="Login gagal!";
-      }
-  }
-  
-  
-?>
+                $.ajax({
+                    url: '/login',
+                    method: 'POST',
+                    data: JSON.stringify({ username: username, password: password }),
+                    contentType: 'application/json',
+                    success: function(response) {
+                        alert(response.message);
+                    },
+                    error: function(error) {
+                        alert('Maaf Terjadi masalah');
+                    }
+                });
+            });
+        });
+    </script>
 <html lang="en">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
