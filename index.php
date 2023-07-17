@@ -238,11 +238,34 @@ line-height: 1.5;
       margin: 10px 0;
       font-size: 14px;
     }
+	.admin-icon {
+  position: auto;
+  margin-left:670px;
+}
+
+.admin-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.admin-icon img:hover {
+  transform: scale(1.1);
+}
 	</style>
 </head>
 </head>
 <body>
-<div class="container">
+<script>
+const adminIcon = document.querySelector('.admin-icon img');
+
+adminIcon.addEventListener('click', () => {
+  window.location.href = 'login.php';
+});
+</script>
+
 <nav class="w-full h-28 shadow-lg fixed z-10">
         <div class="flex justify-left h-full px-10 items-center text-xl">
 			<div class="logo-container">
@@ -254,8 +277,15 @@ line-height: 1.5;
                 <li><a href="tentang.php">Tentang</a></li>
                 <li><a href="Kontak.php">Kontak</a></li>
             </ul>
+			
+		<div class="admin-icon">
+  <a href="login.php">
+    <img src="IMG/akun.jpg" alt="Akun Icon">
+  </a>
+</div>
         </div>
     </nav>
+<div class="container">
 <br>
 <div class="welcome-container">
 <div class="welcome-text">
