@@ -10,6 +10,7 @@
         }
 
         .container {
+			margin: auto;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 10px;
@@ -146,6 +147,29 @@
       text-align: center;
       margin-top: 20px;
     }
+	.footer {
+      background-color: #8bc34a;
+      padding: 20px;
+      color: #fff;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-item {
+      text-align: center;
+    }
+
+    .footer-item h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .footer-item p {
+      margin: 10px 0;
+      font-size: 14px;
+    }
 	
     </style>
 </head>
@@ -171,7 +195,6 @@
         <input type="text" class="search-input" placeholder="Cari produk...">
         <button class="search-button">Cari</button>
     </div>
-	<center>
     <div class="container">
         <div class="product-box">
             <img class="product-image" src="IMG/Logo1.png" alt="Obat A">
@@ -211,7 +234,22 @@
         </div>
         <!-- Tambahkan lebih banyak kotak produk di sini -->
     </div>
-	</center>
+	
+	<div class="footer">
+    <div class="footer-item">
+      <h3>Tentang Kami</h3>
+      <p>Informasi tentang Toko Obat Herbal Istana Herbal</p>
+    </div>
+    <div class="footer-item">
+      <h3>Produk</h3>
+      <p>Daftar produk yang tersedia di Toko Obat Herbal Istana Herbal</p>
+    </div>
+    <div class="footer-item">
+      <h3>Kontak</h3>
+      <p>Hubungi kami untuk informasi lebih lanjut</p>
+    </div>
+	
+  </div>
     <script>
         function showInfo(productName) {
             alert("Info " + productName);
