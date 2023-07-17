@@ -78,7 +78,7 @@
             position: relative;
         }
         .carousel-slide {
-            display: flex;
+            display: center;
             width: 100%;
             height: 100%;
         }
@@ -109,9 +109,9 @@
             cursor: pointer;
         }
 		 .carousel-container {
-            position: relative;
-            width: 500px;
-            height: 300px;
+            position: center;
+            width: 700px;
+            height: 400px;
             overflow: hidden;
         }
 
@@ -157,6 +157,7 @@
         }
 
         .container2 {
+			margin:auto;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -169,7 +170,7 @@
 
         .content {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-gap: 20px;
         }
 
@@ -186,10 +187,31 @@
             height: auto;
             margin-bottom: 10px;
         }
+		.footer {
+		  background-color: #8bc34a;
+		  padding: 20px;
+		  color: #fff;
+		  display: grid;
+		  grid-template-columns: repeat(3, 1fr);
+		  gap: 20px;
+		  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		}
+		.footer-item {
+		  text-align: center;
+		}
+
+		.footer-item h3 {
+		  margin: 0;
+		  font-size: 18px;
+		}
+
+		.footer-item p {
+		  margin: 10px 0;
+		  font-size: 14px;
+		}
     </style>
 </head>
 <body>
-<div class="container">
 <nav class="w-full h-28 shadow-lg fixed z-10">
         <div class="flex justify-left h-full px-10 items-center text-xl">
 			<div class="logo-container">
@@ -203,8 +225,8 @@
             </ul>
         </div>
     </nav>
+<div class="container2"> <center>
 	<br><br><br><br><br><br>
-	<center>
 	 <div class="carousel-container">
         <div class="carousel-item active">
             <img src="IMG/Logo1.png" alt="Image 1">
@@ -217,8 +239,8 @@
         </div>
         <button class="carousel-button carousel-button-prev" onclick="prevSlide()">&#8249;</button>
         <button class="carousel-button carousel-button-next" onclick="nextSlide()">&#8250;</button>
-    </div>
-	</center>
+    </center>
+	</div>
 
     <script>
         var carouselItems = document.querySelectorAll('.carousel-item');
@@ -269,5 +291,18 @@
             </div>
         </div>
     </div>
+	<div class="footer">
+		<div class="footer-item">
+		  <h3>Tentang Kami</h3>
+		  <p>Informasi tentang Toko Obat Herbal Istana Herbal</p>
+		</div>
+		<div class="footer-item">
+		  <h3>Produk</h3>
+		  <p>Daftar produk yang tersedia di Toko Obat Herbal Istana Herbal</p>
+		</div>
+		<div class="footer-item">
+		  <h3>Kontak</h3>
+		  <p>Hubungi kami untuk informasi lebih lanjut</p>
+		</div>
 </body>
 </html>
