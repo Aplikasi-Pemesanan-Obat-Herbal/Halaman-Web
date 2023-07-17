@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<head>
+<title>Login</title>
+  <link rel="icon" href="IMG/Logo1.png" type="IMG/Logo1.png">
+</head>
 <?php
   //include "koneksi.php";
   if(!isset($_SESSION))
@@ -77,7 +81,7 @@
 		<![endif]-->
 	</head>
 
-	<body class="login-layout blur-login">
+	<body class="login-layout blur-login" style="background-image: url('IMG/logobackground.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;" >//backround login
 		<div class="main-container">
 			<div class="main-content">
 				<div class="row">
@@ -134,13 +138,14 @@
 														</button>
 														</center>
 														<p>
-														<center>
-														<button type="submit" class="width-35 btn btn-sm btn-success" >
+													</div>
+													
+													<center>
+														<button class="width-35 btn btn-sm btn-success" > 
 														
-															<span class="bigger-110">Daftar</span>
+															<a href="Registrasi.php" style="color:white;">Daftar</a>	
 														</button>
 														</center>
-													</div>
 
 													<div class="space-4"></div>
 												</fieldset>
