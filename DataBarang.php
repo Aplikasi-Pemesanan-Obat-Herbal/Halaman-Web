@@ -123,12 +123,13 @@
   <div class="sidebar">
     <img src="IMG/Logo1.png" alt="Logo" class="logo">
 
-    <ul>
-      <li onclick="changeContent('dashboard')">Dashboard</li>
-      <li onclick="changeContent('data-barang')">Data Barang</li>
-      <li onclick="changeContent('invoice')">Invoice</li>
+   <ul>
+      <li><a href="Administrator.php" style="color:white;">Dashboard</a></li>
+      <li><a href="DataBarang.php" style="color:white;">Data Barang</li></a>
+      <li><a href="Invoice.php" style="color:white;">Invoice</li><a/>
     </ul>
   </div>
+
 
   <div class="content">
     <div class="search-box">
